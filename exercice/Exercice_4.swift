@@ -10,15 +10,14 @@ import Foundation
 
 
 class ApiManager {
+    static let sharedInstance = ApiManager()
     
-    var baseURL:String
-    
-    init() {
-        
-        self.baseURL = "https://api.randomuser.me/"
-    }
+    let baseURL = "http://api.randomuser.me/"
     
     func getRandomUser(completion: @escaping (Any) -> Void){
+        let route = baseURL
+   
+        
         
     }
 }
